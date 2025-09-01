@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login / Registro</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
@@ -21,18 +21,20 @@
     <div class="carrito"><a href="carrito.html">Carrito</a></div>
   </nav>
 
-  <section class="card">
-    <h2>Registro</h2>
-    Nombre <br> Correo <br> Contraseña <br> Dirección <br> Teléfono <br>
-    <button>Registrarse</button>
-  </section>
+  <div style="display: flex; justify-content: center; gap: 32px; margin-top: 40px;">
+    <section class="card" style="min-width: 250px;">
+      <h2>Registro</h2>
+     
+      <button>Registrarse</button>
+    </section>
 
-  <section class="card">
-    <h2>Login</h2>
-    Correo <br> Contraseña <br>
-    <button>Ingresar</button><br>
-    <a href="#">¿Olvidaste tu contraseña?</a>
-  </section>
+    <section class="card" style="min-width: 250px;">
+      <h2>Login</h2>
+      
+      <button>Ingresar</button><br>
+      <a href="#" style="display:block; margin-top:18px;">¿Olvidaste tu contraseña?</a>
+    </section>
+  </div>
 
   <footer>Footer</footer>
 </body>

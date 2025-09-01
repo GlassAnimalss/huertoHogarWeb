@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Catálogo - HuertoHogar</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
 
+<body>
   <nav>
     <div class="logo">HuertoHogar</div>
     <ul>
@@ -23,15 +23,125 @@
 
   <h1 style="text-align:center; margin-top: 24px;">Catálogo de productos</h1>
 
-  <section class="card">Filtros: Categoría | Precio | Disponibilidad</section>
-
-  <section class="flex">
-    <div class="card"><h3>Manzanas Fuji</h3><p>$1200/kg</p><button>Agregar</button></div>
-    <div class="card"><h3>Naranjas Valencia</h3><p>$1000/kg</p><button>Agregar</button></div>
-    <div class="card"><h3>Zanahorias Orgánicas</h3><p>$900/kg</p><button>Agregar</button></div>
-    <div class="card"><h3>Espinacas Frescas</h3><p>$700/bolsa</p><button>Agregar</button></div>
+  <section class="card">
+    <div class="filter-options" style="text-align: left;">
+      <strong>Filtros:</strong>
+      <select>
+        <option>Categoría</option>
+        <option>Frutas</option>
+        <option>Verduras</option>
+        <option>Orgánicos</option>
+        <option>Otros</option>
+      </select>
+      <select>
+        <option>Precio</option>
+        <option>Menor a mayor</option>
+        <option>Mayor a menor</option>
+      </select>
+      <button class="btn-filtro">Filtrar</button>
+    </div>
   </section>
 
-  <footer>Footer</footer>
-</body>
-</html>
+  <section>
+    <h2 style="text-align: center; color: #8B4513;">Frutas</h2>
+    <div class="flex">
+      <div class="card">
+        <img src="imagenes\manzana.png" alt="Manzanas Fuji" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Manzanas Fuji</h3>
+        <p><strong>Precio:</strong> $1,200 CLP por kilo</p>
+        <p><strong>Stock:</strong> 150 kilos</p>
+        <p><strong>Descripción:</strong> Manzanas Fuji crujientes y dulces, cultivadas en el Valle del Maule. Perfectas
+          para meriendas saludables o como ingrediente en postres. Estas manzanas son conocidas por su textura firme y
+          su sabor equilibrado entre dulce y ácido.</p>
+        <button>Agregar</button>
+      </div>
+      <div class="card">
+        <img src="imagenes\naranja.png" alt="Naranjas Valencia" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Naranjas Valencia</h3>
+        <p><strong>Precio:</strong> $1,000 CLP por kilo</p>
+        <p><strong>Stock:</strong> 200 kilos</p>
+        <p><strong>Descripción:</strong> Jugosas y ricas en vitamina C, estas naranjas Valencia son ideales para zumos
+          frescos y refrescantes. Cultivadas en condiciones climáticas óptimas que aseguran su dulzura y jugosidad.</p>
+        <button>Agregar</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/platano.png" alt="Plátanos Cavendish" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Plátanos Cavendish</h3>
+        <p><strong>Precio:</strong> $800 CLP por kilo</p>
+        <p><strong>Stock:</strong> 250 kilos</p>
+        <p><strong>Descripción:</strong> Plátanos maduros y dulces, perfectos para el desayuno o como snack energético.
+          Estos plátanos son ricos en potasio y vitaminas, ideales para mantener una dieta equilibrada.</p>
+        <button>Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; color: #8B4513;">Verduras</h2>
+    <div class="flex">
+      <div class="card">
+        <img src="imagenes/zanahoria.png" alt="Zanahorias Orgánicas" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Zanahorias Orgánicas</h3>
+        <p><strong>Precio:</strong> $900 CLP por kilo</p>
+        <p><strong>Stock:</strong> 100 kilos</p>
+        <p><strong>Descripción:</strong> Zanahorias crujientes cultivadas sin pesticidas en la Región de O'Higgins.
+          Excelente fuente de vitamina A y fibra, ideales para ensaladas, jugos o como snack saludable.</p>
+        <button>Agregar</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/espinaca.png" alt="Espinacas Frescas" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Espinacas Frescas</h3>
+        <p><strong>Precio:</strong> $700 CLP por bolsa de 500g</p>
+        <p><strong>Stock:</strong> 80 bolsas</p>
+        <p><strong>Descripción:</strong> Espinacas frescas y nutritivas, perfectas para ensaladas y batidos verdes.
+          Estas espinacas son cultivadas bajo prácticas orgánicas que garantizan su calidad y valor nutricional.</p>
+        <button>Agregar</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/pimiento.png" alt="Pimientos Tricolores" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Pimientos Tricolores</h3>
+        <p><strong>Precio:</strong> $1,500 CLP por kilo</p>
+        <p><strong>Stock:</strong> 120 kilos</p>
+        <p><strong>Descripción:</strong> Pimientos rojos, amarillos y verdes, ideales para salteados y platos coloridos.
+          Ricos en antioxidantes y vitaminas, estos pimientos añaden un toque vibrante y saludable a cualquier receta.
+        </p>
+        <button>Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; color: #8B4513;">Otros</h2>
+    <div class="flex">
+      <div class="card">
+        <img src="imagenes/miel.png" alt="Miel Orgánica" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Miel Orgánica</h3>
+        <p><strong>Precio:</strong> $5,000 CLP por frasco de 500g</p>
+        <p><strong>Stock:</strong> 50 frascos</p>
+        <p><strong>Descripción:</strong> Miel pura y orgánica producida por apicultores locales. Rica en antioxidantes y
+          con un sabor inigualable, perfecta para endulzar de manera natural tus comidas y bebidas.</p>
+        <button>Agregar</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/quinua.png" alt="Quinua Orgánica" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Quinua Orgánica</h3>
+        <p><strong>Precio:</strong> $3,200 CLP por bolsa de 1kg</p>
+        <p><strong>Stock:</strong> 60 bolsas</p>
+        <p><strong>Descripción:</strong> Quinua orgánica seleccionada, cultivada en la zona norte de Chile. Ideal para
+          ensaladas, guisos y como fuente de proteína vegetal. Libre de gluten y rica en minerales.</p>
+        <button>Agregar</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/leche.png" alt="Leche Entera" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Leche Entera</h3>
+        <p><strong>Precio:</strong> $1,100 CLP por litro</p>
+        <p><strong>Stock:</strong> 120 litros</p>
+        <p><strong>Descripción:</strong> Leche entera fresca, proveniente de vacas alimentadas de manera natural.
+          Perfecta para desayunos, postres y recetas tradicionales. Rica en calcio y vitaminas.</p>
+        <button>Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HuertoHogar - Todos los derechos reservados</p>

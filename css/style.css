@@ -144,3 +144,22 @@ footer {
   margin: 20px 0;
   text-align: left;
 }
+
+.btn-filtro {
+  background: #4e9a51;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(76,175,80,0.12);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-filtro:hover {
+  background: #388e3c;
+  box-shadow: 0 4px 12px rgba(76,175,80,0.18);
+}
